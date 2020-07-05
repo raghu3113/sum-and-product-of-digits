@@ -1,0 +1,6 @@
+def prod(m):
+    if m<10:
+        return m
+    return(m%10)*prod(int(m/10))
+m=int(input("enter any number:"))
+print("product of digit:",prod(m))
